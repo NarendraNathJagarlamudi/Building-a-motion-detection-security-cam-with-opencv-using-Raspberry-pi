@@ -1,0 +1,23 @@
+I have already configured manually all the tools like airgeddon, aircrack-ng etc by spending hours.
+
+****There is a good news that the broadcom chipset used in the raspberry pi 3b+ has the support 
+of dual functionality. so using monitor mode simultaneously you can connect to wifi for internet and ssh.
+
+****Also this chipset supports 5Ghz band in which this functionality is not even present in Alfa Network Adapter
+   which costs around $30. 
+
+1.To activate monitor mode use the command "sudo airmon-ng start wlan0"
+2.To turn off monitor mode use the command "sudo airmon-ng stop wlan0mon"
+
+If any error occurs use the command "sudo airmon-ng check kill"  before the executing step 1.
+
+If get the network-manager back use "sudo service dhcpcd restart"
+
+
+If the above commands doesn't work in any of the case then use
+1.sudo ifconfig wlan0 down
+2.sudo airmon-ng check kill
+3.sudo airmon-ng start wlan0
+
+Note:- I have included a video of how to configure ssh/vnc using bluetooth so that you can even
+       ssh while the network-manager is down

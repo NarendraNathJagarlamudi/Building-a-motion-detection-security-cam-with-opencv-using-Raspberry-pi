@@ -1,0 +1,26 @@
+There is no rule that u may also get these errors but there are chances......
+
+i fixed the bug mostly you wont face it.
+
+Bugs i found are:-
+i have noticed that when the nexmon patch is loaded from then on the wifi just looks like connected but the network
+does'nt work. so to get wlan0 working use the command >>>>
+
+
+    """sudo systemctl restart dhcpcd"""
+
+from then on u can use the internet.
+
+For connecting ssh/vnc :- first of all there will be no problem in connecting with lan,but in 
+wlan0 it isn't possible as i said the network needs to be restarted.
+So either u can use lan or you can use bluetooth.
+I have also included a video of how to connect ssh/vnc from bluetooth. It works perfectly.
+If u want to use wlan for ssh/vnc then first connect with bluetooth and then press the command 
+"sudo systemctl restart dhcpcd" and then even if it doesn't work try again. For the second time it
+definetly works.
+
+*****i suggest using bluetooth for ssh/vnc because when using monitor mode the wlan interface 
+will be down*****
+
+For connecting vnc in mobile with bluetooth you should definitly on the internet/network sharing 
+which is present at the advanced options of the bluetooth connected device. Only then u can connect to pi with bluetooth

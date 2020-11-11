@@ -1,0 +1,6 @@
+1) Raspberry Pi 3b+
+2) Pi cam
+3) 32gb memory card (mandatory)
+4) Internet connection
+
+the required python libraries are imutils,flask,picamera[array],Flask-BasicAuth==0.2.0

@@ -1,0 +1,10 @@
+1. I have created an virtual environment called "cv" using wrapperenvs.
+
+2. when u get the error saying "workon not found" use the command "source ~/.profile" 
+for updating the user profiles to the bash shell which consists the environment "cv"
+
+3. After making the source profile use the command "workon cv" to enter into the virtual Environment.
+
+Note:- I used the virtual environment because in future if you are working on any other 
+project which does not require "open cv" then there will be no dependency issues.
+

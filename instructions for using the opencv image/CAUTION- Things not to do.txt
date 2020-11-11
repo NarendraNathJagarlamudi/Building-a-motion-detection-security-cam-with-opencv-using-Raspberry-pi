@@ -1,0 +1,12 @@
+I used nexmon patch which only supports kernel versions 4.9,4.14,4.19. 
+When i was making this the latest kernel is 5.4 which doesn't change much.
+when you hit ""apt upgrade"" then the kernel gets updated and the nexmon gets crashed. 
+So i made a hold on the kernel version not to get updated so when you hit ""apt upgrade"" every thing will be upgraded except your kernel.
+when there will be the official support then you can unhold the kernel and make your kernel update.
+
+
+
+***Till then don't update your kernel****
+
+
+In the OS i provided the kernel version is 4.19 (2020)
